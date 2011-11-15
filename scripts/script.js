@@ -1,7 +1,7 @@
 	(function($) {
 		
 		var repos = [],
-			username = 'zenorocha';
+			username = 'zenorochatest';
 		
 		$.getJSON('https://api.github.com/users/' + username + '/repos', function(result){
 	    	
