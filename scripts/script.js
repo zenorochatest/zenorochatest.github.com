@@ -3,7 +3,9 @@
 		var repos = [],
 			username = 'zenorochatest';
 		
-		$.getJSON('https://api.github.com/users/' + username + '/repos', function(result){
+		$.getJSON('https://api.github.com/users/' + username + '/repos?callback=?', function(result){
+
+			console.log(result);
 	    	
 			$.each(result, function(i, field) {
 	    		if (field.language != null)
